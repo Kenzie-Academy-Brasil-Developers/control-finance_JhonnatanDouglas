@@ -101,7 +101,7 @@ body {
 
 @media (min-width: 426px) and (max-width: 768px) {
   .header__container > div {
-      padding: 0px 1rem;
+      padding: 0rem 1rem;
       width: 45rem;
       max-width: 100vw;
   }
