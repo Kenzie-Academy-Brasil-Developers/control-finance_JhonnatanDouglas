@@ -1,5 +1,5 @@
 import { valuesCategory } from '../scripts/valuesData.js';
-import { handleDelete, handleNewValue } from '../pages/scripts/index.js';
+import { handleDelete } from '../pages/scripts/index.js';
 
 export const render = (arrayValues) => {
     const ulListValues = document.querySelector('.list__values');
