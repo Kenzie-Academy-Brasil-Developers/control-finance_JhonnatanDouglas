@@ -5,22 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Control Finance</title>
-    <link
-      rel="shortcut icon"
-      href="./src/assets/favicon.ico"
-      type="image/x-icon"
-    />
-    <meta
-      name="description"
-      content="Control Finance - Seu controle financeiro"
-    />
+
+    <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Control Finance - Seu controle financeiro"/>
+
+    <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css" />
+    <link rel="stylesheet" href="./src/pages/styles/index.css" />
+
+    <script type="module" src="./src/pages/scripts/index.js" defer></script>
   </head>
   <body>
-    <main id="app"></main>
-    <script src="./src/scripts/modal.js"></script>
-    <script src="./src/scripts/valuesData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+
+    <header class="header__container">
+      <div>
+        <h1>
+          <span class="tittle-color__brand">Control</span><span>Finance</span>
+        </h1>
+        <button class="button__register button__primary">Registrar novo valor</button>
+      </div>
+    </header>
+    <main id="app">
+
+      <section class="section__summary">
+        <h2>Resumo Financeiro</h2>
+        <div>
+          <button class="button-value__all button__outline">Todos</button>
+          <button class="button-type__category button__outline" data-entry-id="0">Entradas</button>
+          <button class="button-type__category button__outline" data-entry-id="1">Saídas</button>
+        </div>
+      </section>
+
+      <section class="section__values">
+        <div class="sum__value">
+          <span>Soma dos valores</span>
+          <span class="total__amount">R$ 0,00</span>
+        </div>
+        <div class="list__empty">
+          <h1>Nenhum valor cadastrado</h1>
+          <p>Registre um novo valor</p>
+        </div>
+
+        <ul class="list__values">
+        </ul>
+      </section>
+    </main>
+
+    <dialog id="modal__controller">
+      <div class="modal__container">
+        <div class="header__modal">
+          <h2>Registro de valor</h2>
+          <button class="button__greylow modal__controller--close">X</button>
+        </div>
+        <div>
+          <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
+        </div>
+        <form>
+          <label for="new-value__modal">Valor</label>
+          <input type="number" name="value" id="new-value__modal" placeholder="R$ 00,00">
+        </form>
+        <div class="value__type">
+          <h3>Tipo de valor</h3>
+          <button class="button__outline button__category">Entrada</button>
+          <button class="button__outline button__category">Saída</button>
+        </div>
+        <div class="send__area">
+          <button class="button__greylow button-cancel__values">Cancelar</button>
+          <button type="submit" class="button__primary button-send__values">Inserir valor</button>
+        </div>
+      </div>
+    </dialog>
+    
   </body>
 </html>

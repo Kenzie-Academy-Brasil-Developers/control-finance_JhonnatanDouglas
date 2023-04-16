@@ -1,0 +1,124 @@
+dialog::backdrop {
+    --color-grey-1-opacity-5: rgba(0, 0, 0, 0.5); /* Only works here */
+    background-color: var(--color-grey-1-opacity-5);
+}
+
+#modal__controller {
+    margin: auto;
+    padding: 0rem;
+    border-radius: var(--radius-1);
+    border: 0rem;
+    animation-name: enterModal;
+    animation-duration: var(--animation-duration);
+    animation-timing-function: var(--animation-type);
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5625rem;
+    max-width: 21.5625rem;
+    background: #FFFFFF;
+    gap: var(--gap-2);
+}
+
+.header__modal {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 1.875rem;
+}
+
+.header__modal > h2 {
+    height: 1.25rem;
+    color: var(--color-grey-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--font-line-height-1);
+}
+
+.header__modal > button {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding: var(--padding-0);
+    width: 2.1875rem;
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: var(--font-line-height-1);
+    background: var(--color-grey-5);
+    border-radius: var(--radius-2);
+    cursor: pointer;
+}
+
+.modal__container > div > p {
+
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    line-height: var(--font-line-height-1);
+}
+
+.modal__container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.375rem;
+}
+
+.modal__container > form > label {
+    color: var(--color-grey-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--font-line-height-1);
+}
+
+.modal__container > form > input {
+    padding: 0rem 1rem;
+    width: 100%;
+    height: 2.75rem;
+    background-color: var(--color-mode);
+    border: var(--border-1) solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+}
+
+.modal__container > form > input::placeholder {
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+}
+
+.value__type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 6.875rem;
+}
+
+.value__type > h3 {
+    color: var(--color-grey-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-2);
+    line-height: var(--font-line-height-1);
+}
+
+.value__type > button {
+    color: var(--color-grey-2);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-1);
+    line-height: var(--font-line-height-1);
+    height: 2.1875rem;
+}
+
+.send__area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.send__area > button {
+    width: 10rem;
+    height: 2.1875rem;
+}
