@@ -10,7 +10,6 @@ export const handleSearchCategory = (arrayValues) => {
     buttonAll.forEach((arrayAll) => {
         arrayAll.addEventListener('click', () => {
             render(arrayValues);
-            handleSearchCategory(arrayValues);
         });
     });
 
@@ -20,7 +19,6 @@ export const handleSearchCategory = (arrayValues) => {
             const valuesFounded = searchCategory(arrayValues, typeCategory);
 
             render(valuesFounded);
-            handleSearchCategory(arrayValues);
         });
     });
 };
