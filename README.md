@@ -1,4 +1,4 @@
-# **Nome do Projeto:** 🏁 Entrega: Control Finance
+# 🏁 Entrega: Control Finance
 
 ### :date: **Período do Projeto:** Módulo 2 - Semana 3
 ### :iphone: **Mobile First =** True
